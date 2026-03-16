@@ -21,4 +21,4 @@ In this task, I configured an Azure OpenAI model using LangChain and designed a 
 * **3-Sentence Summary:** Provides a balanced overview including AI definition, cross-disciplinary nature, and ethical implications.
 * **1-Sentence Summary:** Focuses strictly on the core definition and the broad scope of AI evolution and ethics.
 
-![Task 2 Output](C:\Users\DELL\Desktop\AaribImperium\LangchainTasks/task2_output.png)
+![Task 2 Output](./task-2/task2_output.png)
