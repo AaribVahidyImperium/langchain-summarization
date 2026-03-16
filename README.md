@@ -22,3 +22,22 @@ In this task, I configured an Azure OpenAI model using LangChain and designed a 
 * **1-Sentence Summary:** Focuses strictly on the core definition and the broad scope of AI evolution and ethics.
 
 ![Task 2 Output](./task-2/task2_output.PNG)
+
+
+
+
+---
+## Task 3: Retrievers and Vector Stores (RAG)
+In this task, I implemented a basic Retrieval-Augmented Generation (RAG) pipeline. 
+
+### Key Features:
+* **Data Ingestion:** Used `TextLoader` to read a 500-word history of AI.
+* **Text Splitting:** Utilized `CharacterTextSplitter` to create chunks of 200 characters (with 20-character overlap) to ensure the LLM receives context-rich fragments.
+* **Vector Store:** Implemented an `InMemoryVectorStore` with `AzureOpenAIEmbeddings` to index the text chunks based on semantic meaning.
+* **Retrieval-Based Summarization:** Queried the vector store for "AI milestones" and fed the retrieved context into a LangChain summarization chain.
+
+### Output:
+The model successfully identified key dates and events (Logic Theorist, Dartmouth Project 1956) from the text file and summarized them into exactly 3 sentences.
+
+![Task 3 Output](./task-3/task3_output.png)
+
