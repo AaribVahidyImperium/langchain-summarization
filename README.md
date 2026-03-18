@@ -41,3 +41,16 @@ The model successfully identified key dates and events (Logic Theorist, Dartmout
 
 ![Task 3 Output](./task-3/task3_output.png)
 
+
+
+---
+## Task 4: Creating an Agent for Summarization
+In this task, I evolved the summarization chain into a dynamic AI Agent by wrapping it in a LangChain `Tool` and implementing a custom ReAct (Reasoning + Acting) loop.
+
+### Key Features:
+* **Custom Tool Creation:** Designed a `TextSummarizer` tool using prompt templates to enforce a strict 3-sentence limit.
+* **Manual ReAct Loop:** Built a custom execution loop that parses the LLM's "Thought", "Action", and "Observation" outputs, effectively bypassing version-specific LangChain `AgentExecutor` import limitations.
+* **Autonomous Decision Making:** Tested the agent's ability to recognize when to call the summarization tool based on explicit text versus vague requests ("Summarize something interesting").
+
+![Task 4 Output](./task-4/task4_output.png)
+
